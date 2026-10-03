@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thank You Ma'am mari laynesa</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            color: white;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            width: 85%;
+            max-width: 500px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.12);
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #ffd700;
+        }
+
+        .teacher-img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin: 20px 0;
+        }
+
+        .message {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .name {
+            margin-top: 25px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            background: #ffd700;
+            color: #1e3a8a;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <h1>Thank You, Maam Mari! ❤️</h1>
+
+        <!-- Teacher Image -->
+        <img src="teacher.jpg" class="teacher-img" alt="Sir Melfer">
+
+      
+
+        <p class="message">
+            Ma’am Mari, thank you po sa lahat ng turo at patience niyo sa amin. Kahit konti lang po kami sa IT at minsan umaasa rin kami sa AI 😅, tinuturuan niyo pa rin po kami at hindi kayo nagsasawang mag-explain.
+
+Maraming salamat po, Ma’am, sa pag-guide sa amin. Kahit simple lang po yung mga ginagawa namin, malaking tulong po yung mga natututunan namin sa inyo. Sana po lagi kayong okay at ingat po palagi. ❤️
+
+Thank you po, Ma’am Mari! — Romero
+
+            <br><br>
+        </p>
+
+  
+
+        <!-- Music -->
+        <audio id="music" loop>
+            <source src="music.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+
+        <button onclick="playMusic()">
+            🎵 Play Music
+        </button>
+
+    </div>
+
+    <script>
+        function playMusic() {
+            const music = document.getElementById("music");
+
+            if (music.paused) {
+                music.play();
+            } else {
+                music.pause();
+            }
+        }
+    </script>
+
+</body>
+</html>
